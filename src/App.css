@@ -1,0 +1,10 @@
+.main{
+  display: flex;
+}
+
+.navbar{
+  width: 224px;
+}
+.dashboard{
+  width: 100%;
+}

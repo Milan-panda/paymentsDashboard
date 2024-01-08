@@ -1,0 +1,135 @@
+.side-nav {
+  height: 100vh;
+  background-color: #1e2640;
+  width: inherit;
+}
+.nav-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex: 1 0 0;
+}
+.outer-div {
+  display: flex;
+  height: -webkit-fill-available;
+  padding: 16px 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+.company-icon-main {
+  display: flex;
+  width: 192px;
+  align-items: center;
+  gap: 12px;
+}
+.company-icon-main img {
+  width: 39px;
+  height: 39px;
+  border-radius: 4px;
+}
+.company-name-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+}
+.company-name-outer span {
+  color: var(--Black-100, #fff);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 146.667% */
+}
+.company-name-outer a {
+  color: var(--Black-100, #fff);
+  opacity: 0.8;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+  text-decoration-line: underline;
+}
+.down-icon img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.nav-pages {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1 0 0;
+}
+.nav-items {
+  display: flex;
+  width: -webkit-fill-available;
+  border-radius: 4px;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 12px;
+}
+.nav-items:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.nav-items span {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.activeLink {
+  background: rgba(255, 255, 255, 0.1);
+}
+.nav-bottom{
+  width: -webkit-fill-available;
+}
+.wallet-balance-outer {
+  display: flex;
+  padding: 6px 12px;
+  align-items: center;
+  gap: 12px;
+  border-radius: 4px;
+  background: #353c53;
+}
+.wallet-img {
+  display: flex;
+  padding: 6px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.wallet-img img {
+  width: 24px;
+  height: 24px;
+}
+.wallet-balance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.wallet-balance .normal-text {
+  color: #fff;
+  opacity: 0.8;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.wallet-balance .balance{
+  color: var(--Black-100, #FFF);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
