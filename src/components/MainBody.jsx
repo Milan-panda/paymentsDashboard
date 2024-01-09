@@ -1,9 +1,10 @@
 import Search from "../assets/icons/Search.svg";
 import Sort from "../assets/icons/Sort.svg";
 import Download from "../assets/icons/Download.svg";
-import triangleIcon from "../assets/icons/TriangleIcon.svg"
+import triangleIcon from "../assets/icons/TriangleIcon.svg";
 import { orderData } from "../constants/data";
-import chevronRight from "../assets/icons/ChevronRight.svg"
+import chevronRight from "../assets/icons/ChevronRight.svg";
+import helpIcon from "../assets/icons/Help.svg";
 
 const MainBody = () => {
   return (
@@ -57,15 +58,27 @@ const MainBody = () => {
               <thead>
                 <tr>
                   <th className="first-half">Order Id</th>
-                  <th className="first-half">Order Date <span><img src={triangleIcon} alt="triangle Icon" /></span></th>
+                  <th className="first-half">
+                    Order Date{" "}
+                    <span>
+                      <img src={triangleIcon} alt="triangle Icon" />
+                    </span>
+                  </th>
                   <th className="other-half">Order Amount</th>
-                  <th className="other-half">Transaction fees</th>
+                  <th className="other-half" title="Transaction fee">
+                    Transaction fees{" "}
+                    <span>
+                      <img src={helpIcon} alt="help Icon" />
+                    </span>
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 {orderData.map((item, index) => (
                   <tr key={index}>
-                    <td className="first-half"><a href={`/${item.orderId}`}>#{item.orderId}</a></td>
+                    <td className="first-half">
+                      <a href={`/${item.orderId}`}>#{item.orderId}</a>
+                    </td>
                     <td className="first-half">{item.orderDate}</td>
                     <td className="other-half">₹{item.orderAmount}</td>
                     <td className="other-half">₹{item.transactionFees}</td>
@@ -75,11 +88,17 @@ const MainBody = () => {
             </table>
           </div>
           <div className="pagination">
-            <button className="control-button"> <img src={chevronRight} className="rotate-left" alt="" />Previous</button>
+            <button className="control-button">
+              {" "}
+              <img src={chevronRight} className="rotate-left" alt="" />
+              Previous
+            </button>
             <div className="pages">
               <a href="#">1</a>
               <a href="#">...</a>
-              <a href="#" className="currPage">10</a>
+              <a href="#" className="currPage">
+                10
+              </a>
               <a href="#">11</a>
               <a href="#">12</a>
               <a href="#">13</a>
@@ -89,7 +108,9 @@ const MainBody = () => {
               <a href="#">17</a>
               <a href="#">18</a>
             </div>
-            <button className="control-button">Next <img src={chevronRight} alt="" /></button>
+            <button className="control-button">
+              Next <img src={chevronRight} alt="" />
+            </button>
           </div>
         </div>
       </div>

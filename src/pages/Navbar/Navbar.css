@@ -69,6 +69,7 @@
 }
 .nav-items {
   display: flex;
+  text-decoration: none;
   width: -webkit-fill-available;
   border-radius: 4px;
   padding: 8px 16px;
