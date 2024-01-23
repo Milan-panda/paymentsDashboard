@@ -8,3 +8,20 @@
 .dashboard{
   width: 100%;
 }
+
+.arrow{
+  display: flex;
+  align-items: center;
+}
+.arrow img{
+  width: 1rem;
+  cursor: pointer;
+}
+.arrow .left {
+  rotate: 180deg;
+}
+
+.display-none{
+  transition: all 0.2s ease-in;
+  display: none;
+}

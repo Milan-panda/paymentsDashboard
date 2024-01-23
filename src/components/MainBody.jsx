@@ -88,29 +88,35 @@ const MainBody = () => {
             </table>
           </div>
           <div className="pagination">
-            <button className="control-button">
-              {" "}
-              <img src={chevronRight} className="rotate-left" alt="" />
-              Previous
-            </button>
-            <div className="pages">
-              <a href="#">1</a>
-              <a href="#">...</a>
-              <a href="#" className="currPage">
-                10
-              </a>
-              <a href="#">11</a>
-              <a href="#">12</a>
-              <a href="#">13</a>
-              <a href="#">14</a>
-              <a href="#">15</a>
-              <a href="#">16</a>
-              <a href="#">17</a>
-              <a href="#">18</a>
+            <div>
+              <button className="control-button">
+                {" "}
+                <img src={chevronRight} className="rotate-left" alt="" />
+                Previous
+              </button>
             </div>
-            <button className="control-button">
-              Next <img src={chevronRight} alt="" />
-            </button>
+            <div className="pages-div">
+              <div className="pages">
+                <a href="#">1</a>
+                <a href="#">...</a>
+                <a href="#"  className="currPage">
+                  10
+                </a>
+                <a href="#">11</a>
+                <a href="#">12</a>
+                <a href="#">13</a>
+                <a href="#">14</a>
+                <a href="#">15</a>
+                <a href="#">16</a>
+                <a href="#">17</a>
+                <a href="#">18</a>
+              </div>
+            </div>
+            <div>
+              <button className="control-button">
+                Next <img src={chevronRight} alt="" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
